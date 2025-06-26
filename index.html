@@ -7,23 +7,199 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- HEADER COCA-COLA -->
+    <!-- HEADER -->
     <header class="header">
         <nav class="nav-container">
             <a href="#" class="logo">Coca-Cola</a>
             <ul class="nav-menu">
                 <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#products">Produits</a></li>
-                <li><a href="#about">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Projet Coca-Cola - Header ajouté</h1>
-        <p>Site en cours de développement...</p>
-    </main>
+    <!-- SECTION ACCUEIL -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Taste the Feeling</h1>
+            <p>Découvrez l'univers Coca-Cola depuis 1886</p>
+            <p>La boisson rafraîchissante qui unit le monde entier</p>
+            <a href="#services" class="cta-button">Découvrir nos services</a>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Distribution Mondiale</h3>
+                    <p>Coca-Cola est présent dans plus de 200 pays et territoires à travers le monde.</p>
+                    <p>Notre réseau de distribution garantit la fraîcheur et la qualité partout.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Innovation Produits</h3>
+                    <p>Développement constant de nouvelles saveurs et formats pour tous les goûts.</p>
+                    <p>De Coca-Cola Zero aux versions aromatisées, nous innovons continuellement.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Développement Durable</h3>
+                    <p>Engagement pour un avenir plus durable avec des emballages recyclables.</p>
+                    <p>Programmes de protection de l'environnement et de l'eau dans le monde entier.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Partenariats</h3>
+                    <p>Collaboration avec restaurants, cinémas, événements sportifs et culturels.</p>
+                    <p>Coca-Cola accompagne vos moments de bonheur et de partage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PRODUITS -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            
+            <!-- CAROUSEL D'IMAGES - pour feature/js-interactions -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <div class="product-showcase">
+                            <div class="product-image">[Image Coca-Cola Original]</div>
+                            <h3>Coca-Cola Original</h3>
+                            <p>Le goût original et authentique depuis 1886</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="product-showcase">
+                            <div class="product-image">[Image Coca-Cola Zero]</div>
+                            <h3>Coca-Cola Zero</h3>
+                            <p>Tout le goût, zéro calorie</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="product-showcase">
+                            <div class="product-image">[Image Coca-Cola Light]</div>
+                            <h3>Coca-Cola Light</h3>
+                            <p>Le plaisir léger et rafraîchissant</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">❮</button>
+                <button class="carousel-btn next">❯</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>Coca-Cola Original</h3>
+                    <p>La recette secrète originale qui fait le succès de Coca-Cola depuis plus de 135 ans.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Coca-Cola Zero</h3>
+                    <p>Le goût authentique de Coca-Cola sans les calories pour un plaisir sans compromis.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Coca-Cola Light</h3>
+                    <p>Une version allégée qui conserve tout le plaisir de la marque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de contact</h3>
+                    <div class="contact-item">
+                        <h4>Siège Social France</h4>
+                        <p>Coca-Cola European Partners France</p>
+                        <p>280 Bis Boulevard Voltaire</p>
+                        <p>92600 Asnières-sur-Seine</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Service Client</h4>
+                        <p>Téléphone: 0800 900 000 (gratuit)</p>
+                        <p>Email: contact@coca-cola.fr</p>
+                        <p>Du lundi au vendredi: 9h-18h</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Réseaux Sociaux</h4>
+                        <p>Facebook: @CocaColaFrance</p>
+                        <p>Instagram: @cocacolafr</p>
+                        <p>Twitter: @CocaColaFR</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="product">Question sur nos produits</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="complaint">Réclamation</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <p>Coca-Cola, la marque de boisson la plus connue au monde, créée en 1886 à Atlanta.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Mentions légales</h3>
+                    <ul>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Coca-Cola Company. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
